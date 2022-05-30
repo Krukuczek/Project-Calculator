@@ -117,5 +117,62 @@ button:active{
 #ac:active{
     background-color: rgb(247, 32, 32);
 }
+#flip{
+  background-color: rgb(51, 228, 27);
+}
+#flip:hover{
+  background-color: rgb(42, 199, 21);
+}
+#flip:active{
+    background-color: rgb(30, 255, 0);
+}
+#lr{
+    background-color: rgb(92, 173, 248);
+}
+#lr:hover{
+    background-color: rgb(73, 144, 209);
+}
+#lr:active{
+    background-color: rgb(56, 127, 194);
+}
+.flip{
+    animation:spin 1s linear 1;
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
+.wrapper { 
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 2000% 100%;
+  
+  -webkit-animation: rainbow 10s ease infinite;
+  -z-animation: rainbow 10s ease infinite;
+  -o-animation: rainbow 10s ease infinite;
+    animation: rainbow 10s ease infinite;}
+  
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { 
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
 
