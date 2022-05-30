@@ -135,10 +135,6 @@ button:active{
 #lr:active{
     background-color: rgb(56, 127, 194);
 }
-.flip{
-    animation:spin 1s linear 1;
-}
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 .wrapper { 
     height: 100%;

@@ -60,9 +60,15 @@ function mathIt(screenNumber,lastResult) {
     }
 function doAFlip(){
     const calculator=document.getElementById("calculator");
-    calculator.classList.remove("wrapper");
-    calculator.classList.add("flip");
-    setTimeout(()=> {calculator.classList.remove("flip");},1000);  
+    const timing= {
+        duration: 500,
+        iterations: 1,
+    };
+    const spinning= [
+        { transform: 'rotate(0) scale(0.8)' },
+        { transform: 'rotate(360deg) scale(0.8)' },
+      ];
+    calculator.animate(spinning,timing); 
 }
 function magic(){
     const calculator=document.getElementById("calculator");
